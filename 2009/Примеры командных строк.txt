@@ -1,0 +1,11 @@
+Файловый вариант:
+"C:\Program Files\1cv81\bin\1cv8.exe" ENTERPRISE /F "E:\Базы 1С\ROSP2009" /N Exchange /P 12345678
+
+Серверный вариант:
+"C:\Program Files\1cv81\bin\1cv8.exe" ENTERPRISE /S "app-server\rosp2009" /N Exchange /P 12345678
+
+*************************************************************************************************************
+
+Пример запуска обработки:
+
+"C:\Program Files\1cv81\bin\1cv8.exe" ENTERPRISE /S "app-server\rosp2009" /N Exchange /P 12345678 /Out "C:\ExchLog.txt" -NoTruncate /C Exchange=Истина;ВнешниеОбработки.Создать("C:\ЗагрузкаИзКаскада.epf").ИнициализироватьВПакетномРежиме("C:\")
